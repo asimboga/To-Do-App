@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>To Do App</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Todos</h1>
     <form id="form">
-        <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
-
-        <ul class="todos" id="todos">
-            <li>birinci</li>
-            <li>ikinci</li>
-        </ul>
+      <div class="todo-line">
+        <input
+          type="text"
+          class="input"
+          id="input"
+          placeholder="Enter your todo"
+          autocomplete="off"
+        />
+        <button type="submit" class="btn-list">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+      </div>
+      </button>
+      <ul class="todos" id="todos"></ul>
     </form>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
